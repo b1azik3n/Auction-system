@@ -1,0 +1,342 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700";
+
+
+
+
+body {
+    display: table;
+    font-family: open sans, sans-serif;
+    font-size: 16px;
+    width: 100%
+}
+
+.order-table {
+    position: relative
+}
+
+.order-table tr th {
+    background: #e8e9ef
+}
+
+.order-table tr td:last-child,
+.order-table tr th:last-child {
+    text-align: right
+}
+
+.order-table tr:last-child td {
+    border: none
+}
+
+.order-table .badge {
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+.order-table .badge-complete {
+    background: #00c292
+}
+
+.order-table .badge-pending {
+    background: #fb9678
+}
+
+.order-table .badge-delete {
+    background: #FF0000
+}
+
+.order-table .badge-edit {
+    background: #33A2FF
+}
+aside.left-panel {
+    background: #fff;
+    height: 100vh;
+    padding: 0;
+    vertical-align: top;
+    width: 280px;
+    -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, .08);
+    box-shadow: 1px 0 20px rgba(0, 0, 0, .08);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    z-index: 999
+}
+
+.navbar {
+    background: #fff;
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top
+}
+
+.navbar .menu-title {
+    color: #41434d;
+    clear: both;
+    display: block;
+    font-family: open sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.navbar .navbar-nav {
+    float: none;
+    position: relative
+}
+
+.navbar .navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.navbar .navbar-nav>li.active {
+    background: #fafafa
+}
+
+.navbar .navbar-nav li {
+    width: 100%
+}
+
+.navbar .navbar-nav li>a {
+    background: 0 0!important;
+    color: #607d8b;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 10px 0;
+    position: relative;
+    width: 100%
+}
+
+.navbar .navbar-nav li>a .menu-title-text {
+    font-size: 14px
+}
+
+.navbar .navbar-nav li>a .badge {
+    border-radius: 0;
+    font-weight: 600;
+    float: right;
+    margin: 6px 0 0;
+    padding: .4em .5em
+}
+
+.navbar .navbar-nav li.menu-item-has-children {
+    position: relative
+}
+
+.navbar .navbar-nav li.menu-item-has-children a {
+    line-height: 30px
+}
+
+.navbar .navbar-nav li.menu-item-has-children a:before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #607d8b #607d8b transparent transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease
+}
+
+.navbar .navbar-nav li.menu-item-has-children a:hover:before {
+    border-color: #03a9f3 #03a9f3 transparent transparent
+}
+
+
+.navbar .navbar-nav li.menu-item-has-children.show a:before {
+    border-color: transparent #607d8b #607d8b transparent;
+    top: 20px;
+    right: -5px
+}
+
+.navbar .navbar-nav li.menu-item-has-children.show a:hover:before {
+    border-color: transparent #03a9f3 #03a9f3 transparent
+}
+
+.open .navbar .navbar-brand.hidden {
+    display: block
+}
+
+.open aside.left-panel {
+    max-width: 83px;
+    width: 83px
+}
+
+.open aside.left-panel .navbar .navbar-header {
+    padding: 0
+}
+
+.open aside.left-panel .navbar .navbar-brand {
+    display: none
+}
+
+.open aside.left-panel .navbar .navbar-brand.hidden {
+    display: block!important;
+    text-align: center;
+    width: 100%
+}
+
+.open aside.left-panel .navbar .navbar-brand.hidden img {
+    max-width: 100%;
+    margin: 0 auto
+}
+
+.open aside.left-panel .navbar .navbar-nav:before {
+    display: none!important
+}
+
+.open aside.left-panel .navbar .navbar-nav li {
+    position: relative;
+    padding: 0 15px
+}
+
+.open aside.left-panel .navbar .navbar-nav li a {
+    font-size: 0;
+    z-index: 0;
+    -webkit-transition: none;
+    transition: none
+}
+
+.right-panel {
+    background: #f1f2f7;
+    margin-left: 280px;
+    margin-top: 55px
+}
+
+.right-panel .top-left {
+    width: 350px;
+    float: left
+}
+
+.right-panel header.header {
+    background: #fff;
+    border-bottom: 1px solid #e8e9ed;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    clear: both;
+    padding: 0 30px;
+    height: 55px;
+    position: fixed;
+    left: 280px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999
+}
+
+.right-panel .navbar-brand {
+    width: 250px;
+    display: inline-block
+}
+
+.right-panel .navbar-header>a {
+    display: inline-block
+}
+
+.right-panel .navbar-brand {
+    line-height: 42px
+}
+
+.right-panel .navbar-brand img {
+    max-width: 145px
+}
+
+.right-panel .navbar-brand.hidden {
+    display: none
+}
+
+.open .right-panel {
+    margin-left: 83px
+}
+
+.card {
+    margin-bottom: 1.875em;
+    border-radius: 5px;
+    padding: 0;
+    border: 0 solid transparent;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .08)
+}
+
+.card .box-title {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 5px 0
+}
+.card .card-body {
+    float: left;
+    padding: 1.25em;
+    position: relative;
+    width: 100%
+}
+
+.table-stats table th,
+.table-stats table td {
+    border: none;
+    border-bottom: 1px solid #e8e9ef;
+    color: #868e96;
+    font-size: 12px;
+    font-weight: 400;
+    padding: .75em 1.25em;
+    text-transform: uppercase
+}
+
+.table-stats table th img,
+.table-stats table td img {
+    margin-right: 10px;
+    max-width: 45px
+}
+
+
+.table-stats table td {
+    color: #343a40;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    vertical-align: middle
+}
+.card .card-header .card-actions {
+    float: right
+}
+
+footer.site-footer .footer-inner {
+    color: #78909c;
+    font-family: open sans;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 2.45em 1.125em
+}
+
+.field_error{
+	color:red;
+	margin-top:15px;
+}
+
+.card .box-link {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0
+}
+
+.card .box-link a{
+    color:#000;
+	text-decoration:underline;
+}
+.badge a{
+	color:#fff;
+}
